@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0
+}
+ body {
+    background-image: linear-gradient(270deg, #001e16, rgb(0, 34, 60), #001e16);
+} 
+
+#empty {
+    width: 100%;
+    height: 6rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+    align-items: center;
+    width: 100%;
+    /* border-bottom: 1px solid black; */
+    background-image: linear-gradient(90deg, #001e16, rgb(0, 34, 60));
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    position: fixed;
+}
+#me {
+    margin: 1rem;
+}
+#me img {
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    width: 40px;
+    height: 40px;
+}
+.navbar-links ul {
+    display: flex;
+    margin-right: 2rem;
+}
+.navbar-links li {
+    list-style: none;
+}
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+}
+.navbar-links li:hover {
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.toggle-button {
+    position: absolute;
+    right: 1rem;
+    top: 0.75rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+    width: 30px;
+    margin: 1rem;
+}
+.toggle-button .bar {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+.container {
+    width: 85vw;
+    padding: 1rem;
+    margin: 0rem auto 5rem auto;
+    min-height: 80vh;
+    box-shadow:  inset -3px -3px 10px rgba(0, 0, 0, 0.5),  inset 3px 3px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.introductory-div {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.introductory-div h1 {
+    font-size: 4rem;
+}
+.introductory-div p {
+    font-size: 1.5rem;
+}
+.introductory-div h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(209, 63, 92);
+}
+.introductory-div .main-image {
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    margin: 0.5rem 1rem;
+}
+.introduction {
+    color: whitesmoke;
+}
+.media-icons {
+    display: flex;
+    align-items: center;
+}
+
+.media-icons a{
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin: 0.5rem ;
+}
+.media-icons a i {
+    margin: 0rem 0.5rem;
+}
+.media-icons a:hover {
+    text-decoration: underline;
+}
+
+
+/* Designing about section */
+
+#about {
+    margin-top: 2rem;
+    padding: 4rem 1rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .heading h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+#about .info {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+#about .info img {
+    width: 300px;
+    height: auto;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+#about .info .text p {
+    color: crimson;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+#about .info .text {
+    width: 40rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+/* Designing project section */
+
+#projects {
+    min-height: 30rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+}
+#projects .heading {
+    color: white;
+}
+#projects .pages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+#projects .pages .practice-poject {
+    padding: 1rem;
+    height: 250px;
+    width: 250px;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.600);
+    position: relative;
+}
+
+#projects .pages .practice-poject img {
+    width: 100%;
+    height: 75%;
+    border-radius: 0.5rem;
+}
+#projects .pages .practice-poject p {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+}
+#projects .pages .practice-poject span a{
+    text-decoration: none;
+    color: white;
+    margin: 0.5rem;
+}
+
+/* Designing skills section */
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 30rem;
+    background-color:white;
+    padding: 4rem 1rem;
+}
+#skills .ethics {
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#skills .experience {
+    margin-top: 3rem;
+    width: 60%;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+#skills .experience p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+#skills .skills  {
+    margin: 2rem 0;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#skills .skills div {
+    margin: 1rem;
+    width: 150px;
+    height: 150px;
+    /* color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    /* background-color: black; */
+    border: 10px solid rgba(0, 0, 0);
+    border-top: 10px solid rgb(0, 96, 8);
+}
+#skills #git,#skills #css,#skills #canva {
+    border-right: 10px solid rgba(0, 96, 8);
+}
+#skills .skills div:hover {
+    ba
+}
+
+/* Designing footer */
+
+footer {
+    background-color: black;
+    padding: 1.5rem 0.5rem;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+footer a {
+    text-decoration: none;
+    color: crimson;
+}
+
+
+/* Media queries for hamburger navbar */
+
+@media screen and (max-width: 832px) {
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+        /* box-shadow: 0 2px 5px black; */
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        margin-right: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-links li {
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: 1rem 0rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+    .introductory-div h1 {
+        font-size: 3rem;
+    }
+    .media-icons {
+        flex-direction: column;
+    }
+    .media-icons a {
+        font-size: 15px;
+    }
+}
+
+/* Adding media-query for mobile view */
+
+@media screen and (max-width: 588px) {
+    .container {
+        width: 80vw;
+    }
+    .introductory-div .main-image img{
+        width: 225px;
+        height: auto;
+    }
+    .introductory-div h1 {
+        font-size: 2rem;
+    }
+    #about .info img {
+        width: 250px;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    .heading h2 {
+        font-size: 2rem;
+    }
+    #projects .pages .practice-poject {
+        height: 200px;
+        width: 200px;
+    }
+    #skills .experience {
+        width: 100%
+    }
+    #skills .skills div {
+        height: 120px;
+        width: 120px;
+        font-size: 1.2rem;
+    }
+    footer {
+        padding: 1.5rem 0.5rem;
+        font-size: 1rem;
+    }
+}
+
